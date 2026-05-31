@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Explore popular French pastries such as croissants, macarons, éclairs and Paris-Brest.">
+
+  <meta name="keywords"
+        content="French pastries, croissant, macaron, éclair, Paris-Brest, Paris pâtisserie">
+
+  <meta name="author"
+        content="farhana">
+
+  <title>Pastries - La Pâtisserie Parisienne</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <style>
+
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      background: #F8F5F2;
+      color: #2D2D2D;
+      line-height: 1.8;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #2F4156;
+      font-weight: bold;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      background: #2F4156;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover {
+      color: #E3B5A4;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+      transition: .3s;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* BANNER */
+
+    .banner {
+      height: 400px;
+      background:
+      linear-gradient(rgba(47,65,86,0.45),
+      rgba(47,65,86,0.45)),
+      url("images/pastries-banner.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner-content {
+      color: white;
+      max-width: 850px;
+      padding: 20px;
+    }
+
+    .banner-content h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .banner-content p {
+      font-size: 1.3rem;
+    }
+
+    /* INTRO */
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .intro p {
+      color: #555555;
+      font-size: 1.1rem;
+    }
+
+    /* FEATURE SECTIONS */
+
+    .feature {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 460px;
+      margin-bottom: 40px;
+      background: white;
+    }
+
+    .feature-img {
+      flex: 1 1 50%;
+      perspective: 1000px;
+      min-height: 460px;
+    }
+
+    .flip-card {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      position: relative;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .feature-img:hover .flip-card {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+
+    .feature-text {
+      flex: 1 1 50%;
+      padding: 60px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .feature-text p {
+      color: #555555;
+      font-size: 1.1rem;
+    }
+
+    .feature:nth-child(even) .feature-img {
+      order: 2;
+    }
+
+    .feature:nth-child(even) .feature-text {
+      order: 1;
+    }
+
+    /* BUTTON */
+.btn-cta {
+
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  background: #C97C5D;
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: .3s;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+    .btn-cta:hover {
+      background: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta p {
+      color: #2F4156;
+      font-size: 1.1rem;
+    }
+
+    .cta a {
+      color: #2F4156;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      color: #C97C5D;
+    }
+
+    /* BACK BUTTON */
+
+    .back-btn {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .back-btn a {
+      display: inline-block;
+      background: #C97C5D;
+      color: white;
+      padding: .6rem 1.2rem;
+      text-decoration: none;
+      border-radius: .25rem;
+      transition: .3s;
+    }
+
+    .back-btn a:hover {
+      background: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #2F4156;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 8px 0;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #E3B5A4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+         <img src="images/logo.jpg"
+       alt="La Pâtisserie Parisienne Logo"
+       height="45">
+        La Pâtisserie Parisienne
+      </a>
+
+      <button class="navbar-toggler text-white border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="pastries.html">Pastries</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="techniques.html">Techniques</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="best-shops.html">Pastry Shops</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- BANNER -->
+
+  <section class="banner">
+
+    <div class="banner-content">
+
+      <h1>Popular French Pastries</h1>
+
+      <p>
+        Discover some of the most famous and delicious pastries
+        found in Parisian pâtisseries and cafés.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- INTRODUCTION -->
+
+  <section class="intro">
+
+    <h2>Discover the Beauty of French Pâtisserie</h2>
+
+    <p>
+      French pastries are famous around the world for their elegance,
+      delicate textures and rich flavours.
+      From buttery croissants to colourful macarons,
+      French pâtisserie combines creativity, tradition and craftsmanship.
+    </p>
+
+    <p>
+      Each pastry has its own story, ingredients and preparation method.
+      Some are enjoyed daily in cafés, while others are served as luxury desserts
+      in famous Parisian pastry shops.
+    </p>
+
+  </section>
+
+  <!-- CROISSANT -->
+
+  <section class="feature">
+
+    <div class="feature-img">
+
+      <div class="flip-card">
+
+        <div class="flip-card-front"
+             style="background-image: url('images/croissant1.jpg');">
+        </div>
+
+        <div class="flip-card-back"
+             style="background-image: url('images/croissant-back.jpg');">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="feature-text">
+
+      <h2>Croissant</h2>
+
+      <p>
+        The croissant is one of the most iconic French pastries.
+        It is known for its flaky, buttery layers and golden colour.
+        A well-made croissant is light, crisp on the outside and soft inside.
+      </p>
+
+      <p>
+        In France, croissants are commonly enjoyed for breakfast
+        with coffee, hot chocolate or fresh orange juice.
+      </p>
+
+      <a href="croissant.html" class="btn-cta">
+        Discover Croissant
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- MACARON -->
+
+  <section class="feature">
+
+    <div class="feature-img">
+
+      <div class="flip-card">
+
+        <div class="flip-card-front"
+             style="background-image: url('images/macaron1.jpg');">
+        </div>
+
+        <div class="flip-card-back"
+             style="background-image: url('images/macaron-back.jpg');">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="feature-text">
+
+      <h2>Macaron</h2>
+
+      <p>
+        Macarons are colourful almond-based pastries filled with buttercream,
+        ganache or jam. They are admired for their smooth shells,
+        soft filling and elegant appearance.
+      </p>
+
+      <p>
+        They come in many flavours and colours, making them one of the most
+        attractive pastries displayed in Parisian pâtisseries.
+      </p>
+
+      <a href="macaron.html" class="btn-cta">
+        Discover Macaron
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ÉCLAIR -->
+
+  <section class="feature">
+
+    <div class="feature-img">
+
+      <div class="flip-card">
+
+        <div class="flip-card-front"
+             style="background-image: url('images/eclair1.jpg');">
+        </div>
+
+        <div class="flip-card-back"
+             style="background-image: url('images/eclair-back.jpg');">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="feature-text">
+
+      <h2>Éclair</h2>
+
+      <p>
+        Éclairs are made using choux pastry and filled with smooth cream
+        before being topped with chocolate, coffee glaze or colourful icing.
+      </p>
+
+      <p>
+        Modern pâtisseries in Paris often create éclairs with creative flavours,
+        decorative toppings and artistic designs, turning a classic pastry
+        into a luxury dessert.
+      </p>
+
+      <a href="eclair.html" class="btn-cta">
+        Discover Éclair
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- PARIS-BREST -->
+
+  <section class="feature">
+
+    <div class="feature-img">
+
+      <div class="flip-card">
+
+        <div class="flip-card-front"
+             style="background-image: url('images/paris-brest1.jpg');">
+        </div>
+
+        <div class="flip-card-back"
+             style="background-image: url('images/paris-brest-back.jpg');">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="feature-text">
+
+      <h2>Paris-Brest</h2>
+
+      <p>
+        Paris-Brest is a traditional French pastry inspired by the famous
+        Paris-Brest bicycle race. Its round shape represents a bicycle wheel.
+      </p>
+
+      <p>
+        It is made from choux pastry and filled with rich praline cream,
+        giving it a nutty, creamy and luxurious flavour.
+      </p>
+
+      <a href="paris-brest.html" class="btn-cta">
+        Discover Paris-Brest
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <div class="cta">
+
+    <p>Ready to explore more?</p>
+
+    <p>
+      <a href="techniques.html">Pastry Techniques</a> |
+      <a href="best-shops.html">Pastry Shops</a>
+    </p>
+
+  </div>
+
+  <!-- BACK BUTTON -->
+
+  <div class="back-btn">
+
+    <a href="index.html">&larr; Back to Home</a>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>&copy; 2026 La Pâtisserie Parisienne</p>
+
+    <p>
+      <a href="https://www.utm.ac.mu" target="_blank">
+        University of Technology, Mauritius
+      </a>
+    </p>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

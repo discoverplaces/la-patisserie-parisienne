@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Éclair – Classic French Pastry</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+      content="Learn about the French éclair, its history, ingredients, variations and importance in French pastry culture.">
+
+<meta name="keywords"
+      content="éclair, French pastry, choux pastry, French desserts, pastry culture">
+
+<meta name="author"
+      content="Farhana">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <style>
+
+    /* BASE */
+
+    body {
+      font-family: "Times New Roman", serif;
+      background-color: #F8F5F2;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      background: #2F4156;
+    }
+
+    .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+
+    .navbar-brand:hover {
+      color: #E3B5A4;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+      transition: background-color .2s, color .2s;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background-color: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* BANNER */
+
+    .banner {
+      color: white;
+      padding: 180px 20px;
+      text-align: center;
+      background:
+      linear-gradient(rgba(47,65,86,0.45),
+      rgba(47,65,86,0.45)),
+      url('images/eclair-banner.jpg')
+      no-repeat center/cover;
+    }
+
+    .banner h1 {
+      font-size: 3.5rem;
+      margin-bottom: .5rem;
+      font-weight: bold;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+    }
+
+    /* SECTION */
+
+    .section {
+      padding: 40px 15px;
+    }
+
+    h2 {
+      color: #2F4156;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #2F4156;
+      padding-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    h5 {
+      color: #2F4156;
+      font-weight: bold;
+    }
+
+
+    /* IMAGES */
+
+  .image-placeholder {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+    /* FOOTER BUTTON */
+.nav-footer a {
+  display: inline-block;
+  background: #C97C5D;
+  color: white;
+  padding: .6rem 1.2rem;
+  text-decoration: none;
+  border-radius: .25rem;
+  transition: .3s;
+  font-size: 1rem;
+}
+
+.nav-footer a:hover {
+  background: #E3B5A4;
+  color: #2F4156;
+}
+
+    /* CARD */
+
+    .card-info {
+      background: #F1E3D3;
+      border: 1px solid #ddd;
+      border-radius: .25rem;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* FOOTER NAV */
+
+    .nav-footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #2F4156;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      padding: 22px 0;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    footer a {
+      color: #E3B5A4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media (max-width: 767px) {
+
+      .banner h1 {
+        font-size: 2rem;
+      }
+
+      .banner p {
+        font-size: 1rem;
+      }
+
+      .nav-footer {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+         <img src="images/logo.jpg"
+       alt="La Pâtisserie Parisienne Logo"
+       height="45">
+        La Pâtisserie Parisienne
+      </a>
+
+      <button class="navbar-toggler text-white border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+
+        <span class="navbar-toggler-icon"
+              style="filter: invert(1)">
+        </span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="pastries.html">Pastries</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="techniques.html">Techniques</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="best-shops.html">Pastry Shops</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- BANNER -->
+
+  <div class="banner">
+
+    <h1>The Éclair</h1>
+
+    <p>
+      Discover the elegant French pastry made with delicate choux pastry,
+      creamy filling and glossy decorative toppings.
+    </p>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+
+  <div class="container section">
+
+    <!-- OVERVIEW -->
+
+<h2>Overview</h2>
+
+<div class="row align-items-center mb-5">
+
+  <div class="col-lg-6">
+
+    <p>
+      The éclair is one of the most famous pastries in French pâtisserie.
+      It is recognised for its long shape, delicate texture
+      and rich creamy filling.
+    </p>
+
+    <p>
+      Traditionally made using choux pastry,
+      éclairs are filled with smooth pastry cream or custard
+      and finished with glossy chocolate glaze or fondant icing.
+      Their elegant appearance and balanced flavours
+      make them one of the most admired desserts in French pastry culture.
+    </p>
+
+    <p>
+      Today, éclairs are enjoyed in cafés, bakeries
+      and luxury pâtisseries around the world,
+      where pastry chefs continue to create both traditional
+      and modern variations of this classic French dessert.
+    </p>
+
+  </div>
+
+  <div class="col-lg-6">
+
+    <div class="image-placeholder">
+
+      <img src="images/eclair-overview.jpg"
+           alt="Classic French éclairs">
+
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- HISTORY -->
+
+    <h2>The History of the Éclair</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6">
+
+        <div class="image-placeholder">
+
+          <img src="images/eclair-history.jpg"
+               alt="Traditional French éclair pastry">
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <p>
+          The éclair first appeared in France during the 19th century
+          and quickly became one of the most admired pastries
+          in French pâtisserie.
+        </p>
+
+        <p>
+          The name “éclair” means “lightning” in French.
+          According to popular belief, the pastry received this name
+          because it was so delicious that people could eat it very quickly.
+        </p>
+
+        <p>
+          Made using delicate choux pastry,
+          the éclair is baked until light and hollow before being filled
+          with smooth pastry cream or custard.
+          This combination creates its famous soft and creamy texture.
+        </p>
+
+        <p>
+          The pastry is traditionally finished with glossy chocolate glaze
+          or fondant icing, giving it an elegant appearance.
+          Today, éclairs remain one of the most iconic desserts
+          found in French bakeries and luxury pâtisseries around the world.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- DIFFERENT TYPES -->
+
+    <h2>Different Types of Éclairs</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6">
+
+        <div class="image-placeholder">
+
+          <img src="images/eclair-variation.jpg"
+               alt="Different types of éclairs">
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <p>
+          Although the chocolate éclair remains the most traditional version,
+          modern pâtisseries now create many creative variations
+          using different fillings and toppings.
+        </p>
+
+        <p>
+          Popular flavours include vanilla, coffee,
+          caramel, pistachio and raspberry.
+          Some luxury éclairs are decorated with fruits,
+          nuts or artistic icing designs.
+        </p>
+
+        <p>
+          These modern creations show how French pastry chefs continue
+          to combine tradition with creativity.
+        </p>
+
+      </div>
+
+    </div>
+
+    
+    <!-- WHAT MAKES SPECIAL -->
+
+<h2>What Makes Éclairs Special</h2>
+
+<div class="row align-items-center mb-5">
+
+  <div class="col-md-6 order-md-1">
+
+    <p>
+      Éclairs are admired for their delicate balance of textures and flavours.
+      The outer choux pastry shell is light, airy and slightly crisp,
+      while the inside is filled with smooth, rich and creamy pastry cream or custard.
+    </p>
+
+    <p>
+      Their glossy topping, traditionally made with chocolate glaze or fondant icing,
+      gives them an elegant and luxurious appearance.
+      This refined presentation makes éclairs one of the most visually attractive pastries
+      displayed in French bakeries and luxury pâtisseries.
+    </p>
+
+    <p>
+      A perfectly made éclair should feel light and fresh rather than heavy.
+      The flavours should be balanced,
+      allowing the delicate pastry, creamy filling and sweet topping
+      to complement each other harmoniously.
+    </p>
+
+    <p>
+      Today, pastry chefs continue to reinvent éclairs with creative flavours,
+      colourful decorations and modern artistic designs,
+      while still preserving the elegance and craftsmanship
+      of traditional French pastry making.
+    </p>
+
+  </div>
+
+  <div class="col-md-6 order-md-2">
+
+    <div class="image-placeholder">
+
+      <img src="images/eclair-special.jpg"
+           alt="Elegant French éclairs">
+
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- POPULAR TYPES -->
+
+    <div class="row mt-5">
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Chocolate Éclair</h5>
+
+          <p>
+            The classic version filled with pastry cream
+            and topped with rich chocolate glaze.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Coffee Éclair</h5>
+
+          <p>
+            A refined variation filled with coffee cream
+            and topped with smooth coffee icing.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Vanilla Éclair</h5>
+
+          <p>
+            A delicate version filled with vanilla pastry cream
+            and finished with light glaze.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Pistachio Éclair</h5>
+
+          <p>
+            A modern version filled with pistachio cream
+            and decorated with nuts or green icing.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FUN FACT -->
+
+    <h2>Fun Fact</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6 order-md-1">
+
+        <p>
+          The word “éclair” means “lightning” in French.
+          Many people believe the pastry received this name
+          because it is so delicious that it can be eaten very quickly.
+        </p>
+
+        <p>
+          Today, luxury pâtisseries create artistic éclairs
+          with colourful glazes, elegant decorations
+          and creative flavours inspired by modern French pastry trends.
+        </p>
+
+      </div>
+
+      <div class="col-md-6 order-md-2">
+
+        <div class="image-placeholder">
+
+          <img src="images/eclair-funfact.jpg"
+               alt="Luxury French éclairs">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- QUICK FACTS -->
+
+    <div class="row mt-5">
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Quick Facts</h5>
+
+          <ul>
+            <li>Origin: France</li>
+            <li>Main pastry: Choux pastry</li>
+            <li>Common filling: Pastry cream or custard</li>
+            <li>Popular topping: Chocolate glaze</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Best Enjoyed With</h5>
+
+          <ul>
+            <li>Coffee</li>
+            <li>Espresso</li>
+            <li>Tea</li>
+            <li>Hot chocolate</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER NAV -->
+
+  <!-- FOOTER NAV -->
+
+<div class="nav-footer">
+
+  <a href="macaron.html">
+    &larr; Back to Macarons
+  </a>
+
+  <a href="paris-brest.html">
+    Discover Paris-Brest &rarr;
+  </a>
+
+</div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>&copy; 2026 La Pâtisserie Parisienne</p>
+
+    <p>
+      <a href="https://www.utm.ac.mu"
+         target="_blank">
+
+         University of Technology, Mauritius
+
+      </a>
+    </p>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

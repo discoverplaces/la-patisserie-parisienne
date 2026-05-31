@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+<meta name="description"
+      content="Discover the history, flavours and elegance of French macarons, one of the most famous French pastries.">
+
+<meta name="keywords"
+      content="macaron, French pastry, macarons, French desserts, pâtisserie">
+
+<meta name="author"
+      content="Farhana">
+
+  
+  <title>Macaron – Elegant French Pastry</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <style>
+
+    /* BASE */
+
+    body {
+      font-family: "Times New Roman", serif;
+      background-color: #F8F5F2;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      background: #2F4156;
+    }
+
+    .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+
+    .navbar-brand:hover {
+      color: #E3B5A4;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+      transition: background-color .2s, color .2s;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background-color: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* BANNER */
+
+    .banner {
+      color: white;
+      padding: 180px 20px;
+      text-align: center;
+      background:
+      linear-gradient(rgba(47,65,86,0.45),
+      rgba(47,65,86,0.45)),
+      url('images/macaron-banner.jpg')
+      no-repeat center/cover;
+    }
+
+    .banner h1 {
+      font-size: 3.5rem;
+      margin-bottom: .5rem;
+      font-weight: bold;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      padding: 40px 15px;
+    }
+
+    h2 {
+      color: #2F4156;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #2F4156;
+      padding-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    h5 {
+      color: #2F4156;
+      font-weight: bold;
+    }
+
+    /* IMAGES */
+
+  .image-placeholder {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER BUTTON */
+
+.nav-footer a {
+  display: inline-block;
+  background: #C97C5D;
+  color: white;
+  padding: .6rem 1.2rem;
+  text-decoration: none;
+  border-radius: .25rem;
+  transition: .3s;
+  font-size: 1rem;
+}
+
+.nav-footer a:hover {
+  background: #E3B5A4;
+  color: #2F4156;
+}
+
+    /* CARD */
+
+    .card-info {
+      background: #F1E3D3;
+      border: 1px solid #ddd;
+      border-radius: .25rem;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* FOOTER NAV */
+
+    .nav-footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #2F4156;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      padding: 22px 0;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    footer a {
+      color: #E3B5A4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media (max-width: 767px) {
+
+      .banner h1 {
+        font-size: 2rem;
+      }
+
+      .banner p {
+        font-size: 1rem;
+      }
+
+      .nav-footer {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+         <img src="images/logo.jpg"
+       alt="La Pâtisserie Parisienne Logo"
+       height="45">
+        La Pâtisserie Parisienne
+      </a>
+
+      <button class="navbar-toggler text-white border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+
+        <span class="navbar-toggler-icon"
+              style="filter: invert(1)">
+        </span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="pastries.html">Pastries</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="techniques.html">Techniques</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="best-shops.html">Pastry Shops</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- BANNER -->
+
+  <div class="banner">
+
+    <h1>The Macaron</h1>
+
+    <p>
+      Discover the colourful and elegant French pastry
+      admired for its delicate texture, smooth shells
+      and luxurious flavours.
+    </p>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+
+  <div class="container section">
+
+    <!-- OVERVIEW -->
+
+    <h2>Overview</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-lg-6">
+
+        <p>
+          The macaron is one of the most elegant and recognisable French pastries.
+          It is famous for its colourful appearance,
+          smooth shell and soft creamy filling.
+        </p>
+
+        <p>
+          Made using almond flour, sugar and egg whites,
+          macarons are admired for their delicate texture
+          and sophisticated presentation.
+        </p>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-overview.jpg"
+               alt="Colourful French macarons">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- HISTORY -->
+
+    <h2>The History of the Macaron</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-history.jpg"
+               alt="Traditional French pâtisserie macarons">
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <p>
+          The macaron is believed to have originated from almond-based pastries
+          made in the Middle East during the Middle Ages.
+          These pastries were later introduced to Europe by travellers and merchants.
+        </p>
+
+        <p>
+          The macaron became popular in France during the Renaissance
+          when Catherine de Medici brought Italian-style pastries
+          to the French court after marrying King Henry II.
+        </p>
+
+        <p>
+          Originally, macarons were simple almond cookies made from egg whites,
+          sugar and almonds. In the 19th century,
+          Parisian pastry chefs created the modern macaron by joining two shells
+          together with a creamy filling such as ganache or buttercream.
+        </p>
+
+        <p>
+          Today, macarons are one of the most famous symbols of French pâtisserie
+          and are admired for their elegance, colours and delicate flavours.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- FLAVOURS -->
+
+    <h2>Popular Macaron Flavours</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6 order-md-1">
+
+        <p>
+          Macarons are available in a wide variety of flavours,
+          colours and fillings.
+          Traditional flavours include vanilla, chocolate,
+          coffee and pistachio.
+        </p>
+
+        <p>
+          Modern pâtisseries also create creative flavours such as
+          raspberry, salted caramel, rose, lemon,
+          passion fruit and lavender.
+        </p>
+
+        <p>
+          Their colourful appearance makes them one of the most attractive pastries
+          displayed in French pastry shops.
+        </p>
+
+      </div>
+
+      <div class="col-md-6 order-md-2">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-flavours.jpg"
+               alt="Different colourful macaron flavours">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TEXTURE -->
+
+    <h2>What Makes Macarons Special</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-special.jpg"
+               alt="Elegant French macarons">
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <p>
+          A perfect macaron has a crisp outer shell,
+          a soft chewy centre and smooth filling.
+        </p>
+
+        <p>
+          Making macarons requires precision,
+          patience and baking expertise.
+          Even small mistakes in temperature or measurements
+          can affect the final texture.
+        </p>
+
+        <p>
+          Because of their elegance and craftsmanship,
+          macarons are often associated with luxury French pâtisserie.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PERFECT MACARON -->
+
+    <h2>What Makes a Perfect Macaron?</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6 order-md-1">
+
+        <p>
+          A good macaron should not be too sweet or dry.
+          It should have a light crisp shell on the outside
+          and a soft, chewy centre inside.
+        </p>
+
+        <p>
+          The filling should be smooth and creamy,
+          such as ganache, buttercream or fruit jam.
+          The best macarons usually have delicate flavours
+          rather than very strong artificial tastes.
+        </p>
+
+        <p>
+          Soft pastel colours often give macarons a more elegant
+          and high-quality appearance, especially when natural colours are used.
+        </p>
+
+      </div>
+
+      <div class="col-md-6 order-md-2">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-quality.jpg"
+               alt="High quality French macarons">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- WHY POPULAR -->
+
+    <h2>Why Macarons Are So Popular</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-occasion.jpg"
+               alt="Macarons for special occasions">
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <p>
+          Macarons are popular because they are colourful,
+          elegant and suitable for many occasions.
+          They are often used for weddings, birthdays,
+          baby showers and dessert tables.
+        </p>
+
+        <p>
+          They are also given as gifts for special celebrations
+          such as Valentine’s Day, Mother’s Day and Christmas.
+          Their classy appearance makes them look luxurious and thoughtful.
+        </p>
+
+        <p>
+          Another reason for their popularity is the wide variety of flavours.
+          Classic flavours include pistachio, chocolate, vanilla and salted caramel,
+          while modern flavours can include raspberry, rose,
+          passion fruit or strawberry cheesecake.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- AUTHENTIC MACARONS -->
+
+    <h2>Authentic Macarons</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6 order-md-1">
+
+        <p>
+          Authentic macarons are not easy to make.
+          They require careful measurements, proper mixing,
+          correct baking temperature and good technique.
+        </p>
+
+        <p>
+          Fresh handmade macarons usually have the best texture.
+          When macarons are frozen or mass-produced,
+          they may lose their delicate balance between crisp shell,
+          soft centre and creamy filling.
+        </p>
+
+        <p>
+          This is why handcrafted macarons made by skilled pastry chefs
+          are often considered more special and authentic.
+        </p>
+
+      </div>
+
+      <div class="col-md-6 order-md-2">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-authentic.jpg"
+               alt="Handcrafted authentic macarons">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- POPULAR TYPES -->
+
+    <div class="row mt-5">
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Chocolate Macaron</h5>
+
+          <p>
+            A rich macaron filled with smooth chocolate ganache
+            for a deep and luxurious flavour.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Pistachio Macaron</h5>
+
+          <p>
+            A classic green macaron filled with creamy pistachio filling
+            and delicate nutty flavours.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Raspberry Macaron</h5>
+
+          <p>
+            A fruity variation with raspberry filling,
+            admired for its sweet and slightly tangy taste.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Vanilla Macaron</h5>
+
+          <p>
+            A delicate and elegant version made with smooth vanilla cream
+            and light sweet flavours.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FUN FACT -->
+
+    <h2>Fun Fact</h2>
+
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6 order-md-1">
+  
+  
+  <p>
+  Macarons are so popular that they even have their own international celebration.
+  Every year on March 20th, many countries celebrate World Macaron Day,
+  where bakeries and pâtisseries organise special events and charitable activities.
+</p>
+
+<p>
+  The modern macaron did not always look the way it does today.
+  Earlier macarons were simple almond cookies,
+  but French pastry chefs later created the famous version made with
+  two delicate shells and a creamy filling.
+</p>
+
+<p>
+  Today, luxury pâtisseries continue to create limited-edition macarons
+  inspired by seasons, fashion and special celebrations,
+  making them one of the most elegant symbols of French pastry culture.
+</p>
+        
+      </div>
+
+      <div class="col-md-6 order-md-2">
+
+        <div class="image-placeholder">
+
+          <img src="images/macaron-funfact.jpg"
+               alt="Luxury French macarons">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- QUICK FACTS -->
+
+    <div class="row mt-5">
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Quick Facts</h5>
+
+          <ul>
+            <li>Made using almond flour and egg whites</li>
+            <li>Known for colourful appearance and smooth shells</li>
+            <li>Popular in luxury French pâtisseries</li>
+            <li>Available in many flavours and colours</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-info">
+
+          <h5>Best Enjoyed With</h5>
+
+          <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Hot chocolate</li>
+            <li>Champagne</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER NAV -->
+
+  <div class="nav-footer">
+
+  <a href="croissant.html">
+    &larr; Back to Croissant
+  </a>
+
+  <a href="eclair.html">
+    Discover Éclairs &rarr;
+  </a>
+
+</div>
+</div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>&copy; 2026 La Pâtisserie Parisienne</p>
+
+    <p>
+      <a href="https://www.utm.ac.mu"
+         target="_blank">
+
+         University of Technology, Mauritius
+
+      </a>
+    </p>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

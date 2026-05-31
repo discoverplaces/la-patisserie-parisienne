@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+      content="Explore a gallery of French pastries including croissants, macarons, éclairs and Paris-Brest.">
+
+<meta name="keywords"
+      content="French pastries, gallery, croissants, macarons, éclairs, Paris-Brest">
+
+<meta name="author"
+      content="Farhana">
+
+  <title>Gallery – La Pâtisserie Parisienne</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background: #F8F5F2;
+      color: #2D2D2D;
+      line-height: 1.8;
+    }
+
+    h1, h2 {
+      color: #2F4156;
+      font-weight: bold;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      background: #2F4156;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover {
+      color: #E3B5A4;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+      transition: .3s;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* BANNER */
+
+    .banner {
+      height: 350px;
+      background:
+      linear-gradient(rgba(47,65,86,0.45),
+      rgba(47,65,86,0.45)),
+      url("images/gallery-banner.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    /* GALLERY */
+
+    .gallery-section {
+      padding: 50px 15px;
+    }
+
+    .gallery-title {
+      margin-bottom: 35px;
+      border-bottom: 3px solid #2F4156;
+      padding-bottom: 15px;
+    }
+
+    .img-thumbnail {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      padding: 5px;
+      background: white;
+      border: 1px solid #ddd;
+      transition: .3s;
+    }
+
+    .img-thumbnail:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    }
+
+    /* BACK BUTTON */
+
+    .back-btn {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .back-btn a {
+      display: inline-block;
+      background: #C97C5D;
+      color: white;
+      padding: .6rem 1.2rem;
+      text-decoration: none;
+      border-radius: .25rem;
+      transition: .3s;
+      font-size: 1rem;
+    }
+
+    .back-btn a:hover {
+      background: #E3B5A4;
+      color: #2F4156;
+    }
+
+    /* CONTACT BUTTON */
+
+.contact-btn {
+  display: inline-block;
+  background: #C97C5D;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: .3s;
+  font-size: 1rem;
+}
+
+.contact-btn:hover {
+  background: #E3B5A4;
+  color: #2F4156;
+}
+
+    /* FOOTER */
+
+    footer {
+      background: #2F4156;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 8px 0;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #E3B5A4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media (max-width: 767px) {
+      .banner h1 {
+        font-size: 2.5rem;
+      }
+
+      .img-thumbnail {
+        height: 200px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+         <img src="images/logo.jpg"
+       alt="La Pâtisserie Parisienne Logo"
+       height="45">
+        La Pâtisserie Parisienne
+      </a>
+
+      <button class="navbar-toggler text-white border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+
+              <span class="navbar-toggler-icon"
+      style="filter: invert(1)">
+    </span>
+
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pastries.html">Pastries</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="techniques.html">Techniques</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="best-shops.html">Pastry Shops</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- BANNER -->
+
+  <section class="banner">
+
+    <h1>Pastry Gallery</h1>
+
+  </section>
+
+  <!-- GALLERY CONTENT -->
+
+<div class="container gallery-section">
+
+  <h2 class="gallery-title">Pastry Image Gallery</h2>
+
+  <div class="row g-4">
+
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/about-banner.jpg"
+           class="img-thumbnail"
+           alt="French pastry desserts">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/art-presentation.jpg"
+           class="img-thumbnail"
+           alt="Artistic pastry presentation">
+    </div>
+
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/croissant-banner.jpg"
+           class="img-thumbnail"
+           alt="Croissant banner">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/croissant-overview.jpg"
+           class="img-thumbnail"
+           alt="Croissant overview">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/croissant-history.jpg"
+           class="img-thumbnail"
+           alt="Croissant history">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/croissant-variation.jpg"
+           class="img-thumbnail"
+           alt="Croissant variations">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/croissant-funfact.jpg"
+           class="img-thumbnail"
+           alt="Croissant fun fact">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/croissant-back.jpg"
+           class="img-thumbnail"
+           alt="French croissants">
+    </div>
+
+    
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-banner.jpg"
+           class="img-thumbnail"
+           alt="Macaron banner">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-overview.jpg"
+           class="img-thumbnail"
+           alt="Macaron overview">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-history.jpg"
+           class="img-thumbnail"
+           alt="Macaron history">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-flavours.jpg"
+           class="img-thumbnail"
+           alt="Macaron flavours">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-flvours.jpg"
+           class="img-thumbnail"
+           alt="French macarons">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-special.jpg"
+           class="img-thumbnail"
+           alt="Special macarons">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-quality.jpg"
+           class="img-thumbnail"
+           alt="Luxury macarons">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-funfact.jpg"
+           class="img-thumbnail"
+           alt="Macaron fun fact">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-authentic.jpg"
+           class="img-thumbnail"
+           alt="Authentic macarons">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaron-back.jpg"
+           class="img-thumbnail"
+           alt="Macaron desserts">
+    </div>
+
+   
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-banner.jpg"
+           class="img-thumbnail"
+           alt="Éclair banner">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-overview.jpg"
+           class="img-thumbnail"
+           alt="Éclair overview">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-history.jpg"
+           class="img-thumbnail"
+           alt="Éclair history">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-variation.jpg"
+           class="img-thumbnail"
+           alt="Éclair variations">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-special.jpg"
+           class="img-thumbnail"
+           alt="Special éclairs">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-funfact.jpg"
+           class="img-thumbnail"
+           alt="Éclair fun fact">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/eclair-back.jpg"
+           class="img-thumbnail"
+           alt="Chocolate éclairs">
+    </div>
+
+    
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/paris-brest-banner.jpg"
+           class="img-thumbnail"
+           alt="Paris Brest banner">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/paris-brest1.jpg"
+           class="img-thumbnail"
+           alt="Paris Brest pastry">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/paris-brest-back.jpg"
+           class="img-thumbnail"
+           alt="Paris Brest close up">
+    </div>
+
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/best-shops-introduction.jpg"
+           class="img-thumbnail"
+           alt="Pastry shop introduction">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/best-shops-slide1.jpg"
+           class="img-thumbnail"
+           alt="Luxury pastries">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/best-shops-slide2.jpg"
+           class="img-thumbnail"
+           alt="French bakery">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/best-shops-slide3.jpg"
+           class="img-thumbnail"
+           alt="Paris pastry shop">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/laduree.jpg"
+           class="img-thumbnail"
+           alt="Ladurée pastry shop">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/pierre-herme.jpg"
+           class="img-thumbnail"
+           alt="Pierre Hermé pastries">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/stohrer.jpg"
+           class="img-thumbnail"
+           alt="Stohrer pastry shop">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/cedric-grolet.jpg"
+           class="img-thumbnail"
+           alt="Cédric Grolet pastries">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/pastry-shop.jpg"
+           class="img-thumbnail"
+           alt="French pastry shop">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/pastry-shop2.jpg"
+           class="img-thumbnail"
+           alt="Luxury pastry display">
+    </div>
+
+    
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/techniques-banner.jpg"
+           class="img-thumbnail"
+           alt="Pastry techniques">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/techniques-overview.jpg"
+           class="img-thumbnail"
+           alt="Pastry preparation">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/lamination-technique.jpg"
+           class="img-thumbnail"
+           alt="Lamination technique">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/glazing-technique.jpg"
+           class="img-thumbnail"
+           alt="Glazing technique">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/piping-technique.jpg"
+           class="img-thumbnail"
+           alt="Piping technique">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/macaronage-technique.jpg"
+           class="img-thumbnail"
+           alt="Macaronage technique">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/choux-pastry.jpg"
+           class="img-thumbnail"
+           alt="Choux pastry preparation">
+    </div>
+
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/pastry-gallery.jpg"
+           class="img-thumbnail"
+           alt="Pastry gallery">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/pastry-history.jpg"
+           class="img-thumbnail"
+           alt="Pastry history">
+    </div>
+
+    <!-- ADDITIONAL IMAGES -->
+
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <img src="images/paris-patisserie.jpg"
+       class="img-thumbnail"
+       alt="Paris pâtisserie">
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <img src="images/paris-brest-overview.jpg"
+       class="img-thumbnail"
+       alt="Paris Brest overview">
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <img src="images/pastry-culture.jpg"
+       class="img-thumbnail"
+       alt="French pastry culture">
+</div>
+
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/pastry-skills.jpg"
+           class="img-thumbnail"
+           alt="Pastry chef skills">
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <img src="images/french-breakfast.jpg"
+           class="img-thumbnail"
+           alt="French breakfast pastries">
+    </div>
+
+  </div>
+
+  <!-- BACK BUTTON -->
+
+  <div class="text-center my-5">
+
+  <a href="contact.html" class="contact-btn">
+    Contact Us
+  </a>
+
+</div>
+</div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>&copy; 2026 La Pâtisserie Parisienne</p>
+
+    <p>
+      <a href="https://www.utm.ac.mu"
+         target="_blank">
+        University of Technology, Mauritius
+      </a>
+    </p>
+
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
